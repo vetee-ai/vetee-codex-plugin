@@ -1,0 +1,12 @@
+interface:
+  display_name: "Vetee API — beta"
+  short_description: "Work with Vetee GraphQL in beta via MCP"
+  default_prompt: "Use $vetee-beta-api in beta for read-only GraphQL queries. Mutations are strictly forbidden unless I explicitly request the concrete change."
+
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "vetee-beta-api"
+      description: "Vetee API MCP connection for beta"
+      transport: "streamable_http"
+      url: "https://api-mcp.beta.vetee.pet/mcp"

@@ -1,0 +1,31 @@
+{
+  "mcpServers": {
+    "vetee-api": {
+      "type": "http",
+      "url": "https://api-mcp.vetee.pet/mcp",
+      "oauth": {
+        "clientId": "api-mcp",
+        "callbackUrl": "http://127.0.0.1:1456/callback/v93hRIektzps",
+        "callbackPort": 1456
+      }
+    },
+    "vetee-beta-api": {
+      "type": "http",
+      "url": "https://api-mcp.beta.vetee.pet/mcp",
+      "oauth": {
+        "clientId": "api-mcp",
+        "callbackUrl": "http://127.0.0.1:1456/callback/SSFu-nSJBx3W",
+        "callbackPort": 1456
+      }
+    },
+    "vetee-stage-api": {
+      "type": "http",
+      "url": "https://api-mcp.stage.vetee.pet/mcp",
+      "oauth": {
+        "clientId": "api-mcp",
+        "callbackUrl": "http://127.0.0.1:1456/callback/uOh4UgYy0P8Z",
+        "callbackPort": 1456
+      }
+    }
+  }
+}

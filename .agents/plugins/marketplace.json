@@ -1,0 +1,20 @@
+{
+  "name": "vetee",
+  "interface": {
+    "displayName": "Vetee"
+  },
+  "plugins": [
+    {
+      "name": "vetee-api",
+      "source": {
+        "source": "local",
+        "path": "./plugins/vetee-api"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_USE"
+      },
+      "category": "Developer Tools"
+    }
+  ]
+}

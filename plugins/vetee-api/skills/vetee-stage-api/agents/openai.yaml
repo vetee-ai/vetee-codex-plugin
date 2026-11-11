@@ -1,0 +1,12 @@
+interface:
+  display_name: "Vetee API — stage"
+  short_description: "Work with Vetee GraphQL in stage via MCP"
+  default_prompt: "Use $vetee-stage-api in stage for read-only GraphQL queries. Mutations are strictly forbidden unless I explicitly request the concrete change."
+
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "vetee-stage-api"
+      description: "Vetee API MCP connection for stage"
+      transport: "streamable_http"
+      url: "https://api-mcp.stage.vetee.pet/mcp"

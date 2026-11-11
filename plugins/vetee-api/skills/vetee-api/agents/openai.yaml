@@ -1,0 +1,12 @@
+interface:
+  display_name: "Vetee API — master"
+  short_description: "Work with Vetee GraphQL in master via MCP"
+  default_prompt: "Use $vetee-api in master for read-only GraphQL queries. Mutations are strictly forbidden unless I explicitly request the concrete change."
+
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "vetee-api"
+      description: "Vetee API MCP connection for master"
+      transport: "streamable_http"
+      url: "https://api-mcp.vetee.pet/mcp"

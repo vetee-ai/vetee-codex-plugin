@@ -1,0 +1,27 @@
+{
+  "name": "vetee-api",
+  "version": "1.0.0",
+  "description": "Work with the Vetee GraphQL API through authenticated MCP connections for master, beta and stage.",
+  "author": {
+    "name": "Vetee",
+    "url": "https://github.com/vetee-ai"
+  },
+  "repository": "https://github.com/vetee-ai/vetee-codex-plugin",
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "Vetee API",
+    "shortDescription": "Vetee GraphQL through MCP",
+    "developerName": "Vetee",
+    "category": "Developer Tools",
+    "capabilities": [
+      "Read",
+      "Write"
+    ],
+    "defaultPrompt": [
+      "Use $vetee-api in master for read-only GraphQL queries. Mutations are strictly forbidden unless I explicitly request the concrete change.",
+      "Use $vetee-beta-api in beta for read-only GraphQL queries. Mutations are strictly forbidden unless I explicitly request the concrete change.",
+      "Use $vetee-stage-api in stage for read-only GraphQL queries. Mutations are strictly forbidden unless I explicitly request the concrete change."
+    ]
+  }
+}
