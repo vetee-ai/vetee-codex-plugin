@@ -38,6 +38,21 @@ actual host-prefixed tool names; do not invent them.
 - Read [Open a file](../../references/open-file.md) when the task concerns
   retrieving a file or selecting image dimensions and fit options.
 
+For administration and data inspection/changes, load the relevant domain:
+
+- [Stories](../../references/stories.md)
+- [Offers, orders and payments](../../references/offers-orders-and-payments.md)
+- [Consultations](../../references/consultations.md)
+- [Reference data and shared filter/translation conventions](../../references/reference-data.md)
+- [Animals](../../references/animals.md)
+- [Facilities](../../references/facilities.md)
+- [Content and articles](../../references/content-and-articles.md)
+- [Shop](../../references/shop.md)
+
+Domain pages link to individual subpages covering models, translations, filters
+and data changes. Consumer application flows are omitted. Describing a change
+never authorizes it; confirm operations against the selected live schema.
+
 Read only the references needed for the task. File references describe the
 existing HTTP endpoints; they do not add MCP tools or grant write permission.
 

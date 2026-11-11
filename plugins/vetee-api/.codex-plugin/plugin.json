@@ -1,6 +1,6 @@
 {
   "name": "vetee-api",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Work with the Vetee GraphQL API through authenticated MCP connections for master, beta and stage.",
   "author": {
     "name": "Vetee",

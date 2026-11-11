@@ -58,12 +58,28 @@ nezpůsobí přepnutí na jiné. Nástroj `admin_query` slouží pro čtení a i
 
 ## API reference
 
-Skilly odkazují podle potřeby na čtyři samostatné reference odvozené z dokumentace Vetee:
+Skilly odkazují podle potřeby na samostatné reference odvozené z dokumentace Vetee:
 
 - [Základy GraphQL](plugins/vetee-api/references/graphql-basics.md)
 - [Nastavení aplikace](plugins/vetee-api/references/app-settings.md)
 - [Nahrání souboru](plugins/vetee-api/references/upload-file.md)
 - [Otevření souboru](plugins/vetee-api/references/open-file.md)
+
+Administrativní domény popisují modely a operace dostupné přes API:
+
+- [Stories](plugins/vetee-api/references/stories.md)
+- [Nabídky, objednávky a platby](plugins/vetee-api/references/offers-orders-and-payments.md)
+- [Konzultace](plugins/vetee-api/references/consultations.md)
+- [Referenční data](plugins/vetee-api/references/reference-data.md)
+- [Zvířata](plugins/vetee-api/references/animals.md)
+- [Zařízení a ordinace](plugins/vetee-api/references/facilities.md)
+- [Obsah a články](plugins/vetee-api/references/content-and-articles.md)
+- [Shop](plugins/vetee-api/references/shop.md)
+
+Každá doména má vlastní dokument a odkazy na jednotlivé podstránky ve stejnojmenné
+podsložce. Reference popisují význam modelů, překlady, filtry a správu dat;
+uživatelské postupy aplikace jsou vynechané. Popis mutace není povolením k jejímu
+spuštění. Skutečné schéma a dostupnost operací se ověřují ve vybraném prostředí.
 
 Nahrávání a zobrazení souborů jsou popsané jako HTTP operace; dokumentace
 nepřidává nové MCP nástroje. Přístupové odkazy na zdrojové dokumenty a jejich

@@ -130,9 +130,10 @@ requested action. Generic model mutations commonly use `createOne<Model>`,
 
 Newer custom mutations commonly accept a required `data` argument with an
 `Input_Custom_<Operation>Data` type. Older operations may differ, so inspect the
-actual schema. Generic update inputs can wrap a value in `{set: ...}`; relation
-inputs have their own connect/disconnect shapes. Omission and explicit `null`
-can have different effects. Send only requested fields.
+actual schema. Current generic updates use direct scalar values such as
+`data: {isActive: false}`; relation inputs have their own connect/disconnect
+shapes. Omission and explicit `null` can have different effects. Send only
+requested fields.
 
 Select `status {success errorCode errorMessage}` wherever exposed, either directly
 or inside the response object, along with the minimum returned data needed for
@@ -163,3 +164,20 @@ Load the relevant reference when needed:
 - [Application settings](app-settings.md): contact and support settings query.
 - [Upload a file](upload-file.md): multipart upload and the returned file ID.
 - [Open a file](open-file.md): file view endpoint and image parameters.
+
+Administrative domain references, with individual linked subpages:
+
+- [Stories](stories.md)
+- [Offers, orders and payments](offers-orders-and-payments.md)
+- [Consultations](consultations.md)
+- [Reference data and shared filter/translation conventions](reference-data.md)
+- [Animals](animals.md)
+- [Facilities](facilities.md)
+- [Content and articles](content-and-articles.md)
+- [Shop](shop.md)
+
+Read [admin filters and translations](reference-data/filters-and-translations.md)
+for visibility, relation filters, translations, soft deletion and requested
+updates. Domain pages describe the API contract and administrative data.
+Consumer flows and internal implementation details are omitted.
+The selected live schema remains the contract; read-only is still the default.
